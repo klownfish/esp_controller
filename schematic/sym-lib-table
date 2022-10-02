@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name "bmi088")(type "Legacy")(uri "${KIPRJMOD}/lib/BMI088.lib")(options "")(descr ""))
+  (lib (name "l96")(type "Legacy")(uri "${KIPRJMOD}/lib/L96-M33.lib")(options "")(descr ""))
+  (lib (name "l86")(type "Legacy")(uri "${KIPRJMOD}/lib/L86-M33.lib")(options "")(descr ""))
+  (lib (name "buck_converter")(type "KiCad")(uri "${KIPRJMOD}/lib/buck_converter.kicad_sym")(options "")(descr ""))
+)
