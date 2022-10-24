@@ -1,6 +1,6 @@
-set(CMAKE_HOST_SYSTEM "Linux-5.18.0-4-amd64")
+set(CMAKE_HOST_SYSTEM "Linux-5.19.0-2-amd64")
 set(CMAKE_HOST_SYSTEM_NAME "Linux")
-set(CMAKE_HOST_SYSTEM_VERSION "5.18.0-4-amd64")
+set(CMAKE_HOST_SYSTEM_VERSION "5.19.0-2-amd64")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
 include("/home/olof/.platformio/packages/framework-espidf/tools/cmake/toolchain-esp32.cmake")

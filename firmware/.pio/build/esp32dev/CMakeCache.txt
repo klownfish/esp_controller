@@ -28,8 +28,8 @@ CMAKE_ASM_COMPILER_AR:FILEPATH=/home/olof/.platformio/packages/toolchain-xtensa-
 // for the GCC compiler
 CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/home/olof/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc-ranlib
 
-//Flags used by the ASM compiler during all build types.
-CMAKE_ASM_FLAGS:STRING=
+//ASM Compiler Base Flags
+CMAKE_ASM_FLAGS:STRING='-mlongcalls '
 
 //Flags used by the ASM compiler during DEBUG builds.
 CMAKE_ASM_FLAGS_DEBUG:STRING=-g
@@ -56,7 +56,7 @@ CMAKE_CXX_COMPILER_AR:FILEPATH=/home/olof/.platformio/packages/toolchain-xtensa-
 CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/home/olof/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc-ranlib
 
 //C++ Compiler Base Flags
-CMAKE_CXX_FLAGS:STRING=-mlongcalls -Wno-frame-address
+CMAKE_CXX_FLAGS:STRING='-mlongcalls -Wno-frame-address '
 
 //Flags used by the CXX compiler during DEBUG builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
@@ -79,7 +79,7 @@ CMAKE_C_COMPILER_AR:FILEPATH=/home/olof/.platformio/packages/toolchain-xtensa-es
 CMAKE_C_COMPILER_RANLIB:FILEPATH=/home/olof/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc-ranlib
 
 //C Compiler Base Flags
-CMAKE_C_FLAGS:STRING=-mlongcalls -Wno-frame-address
+CMAKE_C_FLAGS:STRING='-mlongcalls -Wno-frame-address '
 
 //Flags used by the C compiler during DEBUG builds.
 CMAKE_C_FLAGS_DEBUG:STRING=-g
@@ -260,7 +260,7 @@ LINK_WITH_TRUSTED_STORAGE:BOOL=OFF
 MBEDTLS_FATAL_WARNINGS:BOOL=ON
 
 //No help, variable specified on the command line.
-PYTHON:UNINITIALIZED=/home/olof/bin/python
+PYTHON:UNINITIALIZED=/usr/bin/python3
 
 //No help, variable specified on the command line.
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
@@ -281,7 +281,7 @@ USE_SHARED_MBEDTLS_LIBRARY:BOOL=OFF
 USE_STATIC_MBEDTLS_LIBRARY:BOOL=ON
 
 //Path to a program.
-_Python3_EXECUTABLE:FILEPATH=/home/olof/bin/python
+_Python3_EXECUTABLE:FILEPATH=/usr/bin/python3.9
 
 //Dependencies for the target
 __idf___pio_env_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;
@@ -689,12 +689,12 @@ C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS:INTERNAL=1
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.35.1()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/olof/bin/python][cfound components: Interpreter ][v3.10.6()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3.9][cfound components: Interpreter ][v3.9.13()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: _Python3_EXECUTABLE
 _Python3_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: _Python3_INTERPRETER_SIGNATURE
 _Python3_INTERPRETER_SIGNATURE-ADVANCED:INTERNAL=1
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=ed1fa30f3aeef791755d45e3d348f82a
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=139a631a3add2efc9a82479a2e632ea9
 

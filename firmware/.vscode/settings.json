@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "led_strip_rmt_encoder.h": "c",
+        "led_strip.h": "c"
+    }
+}
